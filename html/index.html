@@ -5,44 +5,84 @@
     <title>Обучающий портал компании</title>
     <link rel="stylesheet" href="css/index.css">
     <style>
+        .menu {
+          height: 50px;
+        }
         .container {
-         width: 1500px;
-         height: 400px;
-         background-image: linear-gradient(to right, #E2BCBB, #E4514A);
+         /* width: 1500px; */
+         /* height: 400px; */
+         /* background-image: linear-gradient(to right, #E2BCBB, #E4514A); */
+         /* padding-left: 12px;
+         padding-right: 12px;
+         padding-top: 6px;
+         padding-bottom: 6px; */
+         display: flex;
+         flex-direction: row;
          }
          .col-1-2 {
-         width: 50%;
+          width: 25%;
+         }
+         .card {
+          display: flex;
+          flex-direction: row;
+          background-color: rgba(0, 128, 128, 0.3);
+          border-radius: 8px;
+          padding-left: 12px;
+          padding-right: 12px;
+          padding-top: 6px;
+          padding-bottom: 6px;
+          margin: 12px;          
+         }
+         .card_image {
+          width: 50px;
+          height: 50px; 
+          border: 0;
+          margin-right: 12px;
+         }
+         .remove-under {
+          text-decoration:none;
          }
     </style>
 </head>
 <body>
-  <div class="container">
-    <a href="jpg/logo.jpg" class="logo">Обучающий портал компании</a>
-    <nav>
-      <ul>
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="cmd.html">Командная строка Win</a></li>
-          <li><a href="macOS.html">Терминал Mac</a></li>
-          <li><a href="git.html">Команды Git</a></li>
-      </ul>
-    </nav>
+  <div class="menu">
+    <a href="index.html" class="logo"><img src="jpg/logo.jpg" width="50" height="50" border="0"></a>
+      <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="cmd.html">Командная строка Win</a></li>
+            <li><a href="macOS.html">Терминал Mac</a></li>
+            <li><a href="git.html">Команды Git</a></li>
+        </ul>
+      </nav>
   </div>
-<div class="main">
+  <h1>Обучающий портал компании</h1>
   <div class="container">
     <div class="col-1-2">
-           <p><a href="index.html"><img src="jpg/logo.jpg" width="50" height="50" border="0"></a></p>
-    </div>
-    <div class="col-2-2">
-           <p><a href="cmd.html"><img src="jpg/git.jpg" width="50" height="50" border="0"></a></p>
-    </div>
+      <a href="index.html" class="remove-under">
+        <div class="card">
+          <img src="jpg/logo.jpg" class="card_image"><p>Главная</p>
+        </div>
+      </a>
+      <a href="cmd.html" class="remove-under">
+        <div class="card">
+          <img src="jpg/win.jpg" class="card_image"><p>Командная строка Win</p>
+        </div>
+      </a>
+    </div> 
     <div class="col-1-2">
-           <p><a href="macOS.html"><img src="jpg/mac.jpg" width="50" height="50" border="0"></a></p>
-    </div>
-    <div class="col-2-2">
-           <p><a href="git.html"><img src="jpg/win.jpg" width="50" height="50" border="0"></a></p>
+      <a href="git.html" class="remove-under">
+        <div class="card">
+          <img src="jpg/git.jpg" class="card_image"><p>Команды Git</p>
+        </div>
+      </a>
+      <a href="macOS.html" class="remove-under">
+        <div class="card">
+          <img src="jpg/mac.jpg" class="card_image"><p>Терминал Mac</p>
+        </div>
+      </a>
     </div>
   </div>
-</div>
 <footer>
 </footer>
 </body>
